@@ -16,7 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from hotel_app import views  # Importamos las vistas que acabamos de crear
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin_django/', admin.site.urls), # URL del administrador interno de Django
+    
+    # Rutas de tu página web
+    path('', views.inicio, name='inicio'), # Al entrar a la web principal (sin ruta) carga Index.html
+    path('catalogo/', views.catalogo, name='catalogo'),
+    path('reservaciones/', views.reservaciones, name='reservaciones'),
+    path('registro/', views.registro, name='registro'),
+    path('iniciar-sesion/', views.iniciosesion, name='iniciosesion'),
+    path('contacto/', views.contacto, name='contacto'),
+    path('conocenos/', views.conocenos, name='conocenos'),
+    path('panel-admin/', views.panel_admin, name='panel_admin'),
+    path('altas-bajas/', views.altas_bajas, name='altas_bajas'),
 ]
