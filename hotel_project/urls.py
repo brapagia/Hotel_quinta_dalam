@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from hotel_app import views # Importante: importar tus vistas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.inicio, name='inicio'), # Esta línea es la que hace que cargue el Index al abrir el link
+    # ... tus otras rutas ...
 ]
