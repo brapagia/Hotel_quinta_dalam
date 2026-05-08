@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylehabi.css">
+    <script src ="jquery-4.0.0.min.js"></script>
+    <script src="scriptcata.js"></script>
+    <title>Habitaciones · Hotel Quinta Dalam</title>
+    
+</head>
+<body>
+    <header>
+        <!-- Barra superior con enlaces secundarios -->
+        <div class="barra_sup">
+            <div class="barra_supdere">
+                <a href="Iniciosesion.html">Inicia sesión</a> | <a href="Registro.html">Registrate</a>
+            </div>
+        </div>
+
+        <!-- Barra de navegación principal -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="Reservaciones.html">Reservaciones</a></li>
+                <li><a href="Catalogo.html">Habitaciones</a></li>
+                <li class="brand"><a href="index.html">Quinta Dalam</a></li>
+                <li><a href="Conocenos.html">Conocenos</a></li>
+                <li><a href="Contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <p>Bienvenido, le presentamos las habitaciones con las que contamos para que se hospede con nosotros.</p>
+        </div>
+        
+        <!-- Contenedor donde se generan las tarjetas dinámicamente -->
+        <div class="catalogo-grid" id="catalogo-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hotel Quinta Dalam. Todos los derechos reservados.</p>
+        <a href="https://validator.w3.org/" target="_blank">
+            <img src="https://drive.google.com/thumbnail?id=1enoBu4CNO2x4vKON877k-YREigPGO2rc" alt="validacion HTML" width="110">
+        </a>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" />
+            </a>
+        </p>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color: #8d0a0a;
+    display: flex;
+    flex-direction: column; /* Coloca los hijos en columna */
+    min-height: 100vh;
+    height: 100%; 
+}
+
+/* Header */
+header{
+    border-bottom: 1px solid #c69b5a;
+    background-color: #c69b5a;
+    padding: 1rem 2rem;
+}
+
+/* Barra superior */
+.barra_sup{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.barra_supdere a {
+    text-decoration: none;
+    color: #8d0a0a;
+    margin: 0 0.3rem;
+}
+
+.barra_supdere a:hover {
+    color: #ecaa02;
+}
+
+/* Navegación principal */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #8d0a0a;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #8d0a0a; /* Color de acento (puedes cambiarlo) */
+}
+
+/* Estilo especial para el nombre del hotel (como "iCREAM") */
+.navbar .brand a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #8d0a0a;
+}
+
+.navbar .brand a:hover {
+    color: #8d0a0a;
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #c69b5a;
+    border-top: 1px solid #eee;
+    font-size: 0.85rem;
+    width: 100%; 
+    height: 100%; 
+    box-sizing: border-box;
+    color: #8d0a0a;
+}
+
+/* Estilos para formularios de registro y login */
+.form-container {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #c69b5a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.campo {
+    margin-bottom: 1.2rem;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.campo input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0,119,204,0.3);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background-color: #8d0a0a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #8d0a0a;
+}
+
+.enlace-form {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+.enlace-form a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.enlace-form a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://drive.google.com/thumbnail?id=1mfM_N7Ovu_gMUCLNU7C_cZWwoLdEizyA');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero-texto {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-texto h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero-texto p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: #e78311;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn-hero:hover {
+    background-color: #653806;
+    transform: scale(1.05);
+}
+
+/* Bienvenida */
+.bienvenida {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.bienvenida h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bienvenida p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Carrusel del hotel (reutilizando estilos anteriores, adaptado para 4 imágenes) */
+.carrusel-hotel {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.carrusel-hotel h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Ajustes para que el carrusel ocupe el ancho deseado */
+.carrusel-hotel .carrusel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.carrusel-hotel .carrusel-imagenes {
+    display: flex;
+    width: 400%; /* 4 imágenes */
+    transition: margin-left 0.5s;
+}
+
+.carrusel-hotel .carrusel-item {
+    width: 25%;
+}
+
+.carrusel-hotel .carrusel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Posicionamiento para las 4 imágenes */
+#index1:checked ~ .carrusel-imagenes { margin-left: 0; }
+#index2:checked ~ .carrusel-imagenes { margin-left: -100%; }
+#index3:checked ~ .carrusel-imagenes { margin-left: -200%; }
+#index4:checked ~ .carrusel-imagenes { margin-left: -300%; }
+
+/* Indicadores */
+.carrusel-hotel .carrusel-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.carrusel-hotel .indicador {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Resaltar indicador activo */
+#index1:checked ~ .carrusel-indicadores label[for="index1"],
+#index2:checked ~ .carrusel-indicadores label[for="index2"],
+#index3:checked ~ .carrusel-indicadores label[for="index3"],
+#index4:checked ~ .carrusel-indicadores label[for="index4"] {
+    background-color: #0077cc;
+}
+
+.error-message {
+            color: #d9534f;
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 5px;
+        }
+        #errorGeneral {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+            padding: 8px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-texto h1 {
+        font-size: 2.5rem;
+    }
+    .hero-texto p {
+        font-size: 1.2rem;
+    }
+    .carrusel-hotel .carrusel-item img {
+        height: 300px;
+    }
+}
